@@ -1,8 +1,5 @@
-
 export const IMG_BASE_URL = 'https://image.tmdb.org/t/p';
 export const IMG_W400 = 'w400';
-
-
 const saveLs = (key, value) => {
   try {
     const serializedState = JSON.stringify(value);
@@ -11,7 +8,6 @@ const saveLs = (key, value) => {
     console.error('Set state error: ', error.message);
   }
 };
-
 const loadLs = (key) => {
   try {
     const serializedState = localStorage.getItem(key);
@@ -20,7 +16,6 @@ const loadLs = (key) => {
     console.error('Get state error: ', error.message);
   }
 };
-
 const removeLs = (key) => {
   try {
     localStorage.removeItem(key);
