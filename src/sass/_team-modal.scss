@@ -1,0 +1,85 @@
+.team-modal {
+  background-color: var(--background-modal);
+  width: 320px;
+  padding: 48px 20px 0px;
+  margin-bottom: 50px;
+  position: relative;
+  margin: auto;
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-modal {
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .team-modal {
+    width: 1000px;
+  }
+}
+
+.team-modal__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 768px) {
+  .team-modal__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .team-modal__list {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+  }
+}
+
+
+
+
+.team-modal__item {
+  width: 200px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  transition: all .25s cubic-bezier(.4,0,.2,1);
+}
+
+.team-modal__item div {
+  display: flex;
+  justify-content: center;
+}
+
+.team-modal__pic {
+  min-width: 100%;
+  border-radius: 50%;
+}
+
+.team-modal__name {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.team-modal__role {
+  text-align: center;
+  color: var(--secondary-text-color);
+  font-size: 16px;
+}
+
+.team-modal__link {
+  width: 30px;
+}
+
+.team-modal__title {
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
