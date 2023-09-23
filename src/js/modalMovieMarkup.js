@@ -1,6 +1,6 @@
 // api.js
-export const IMG_BASE_URL = 'https://image.tmdb.org/t/p';
-export const IMG_W400 = 'w400';
+export const IMG_BASE_URL = '';
+export const IMG_W400 = '';
 
 const saveLs = (key, value) => {
   try {
