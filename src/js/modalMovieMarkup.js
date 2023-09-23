@@ -1,6 +1,5 @@
 // api.js
-export const IMG_BASE_URL = '';
-export const IMG_W400 = '';
+import { IMG_BASE_URL, IMG_W400 } from './api';
 
 const saveLs = (key, value) => {
   try {
